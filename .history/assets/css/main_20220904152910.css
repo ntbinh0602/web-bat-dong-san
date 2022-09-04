@@ -1,0 +1,11 @@
+.header__nav {
+    background: #fff;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-right-list,
+.nav-left-list {
+    list-style: none;
+}
