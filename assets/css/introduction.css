@@ -1,0 +1,155 @@
+.heading {
+    margin-top: 90px;
+    height: 450px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(74.85deg, rgba(198, 0, 0, 0.2) 0%, rgba(198, 0, 0, 0) 49.69%), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+}
+
+.heading-title{
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 65px;
+    line-height: 80px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    /* width: 100%; */
+}
+
+.heading img {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.our-description {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 50px 0;
+}
+
+.our-description-content-right,
+.our-description-content-left {
+    width: 40%;
+    padding: 25px;
+}
+
+.our-description-content-left h5 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 22px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    color: #C60000;
+}
+
+.our-description-content-right p,
+.our-description-content-left p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #393939;
+}
+
+.middle-banner {
+    width: 100%;
+    height: 390px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.middle-banner > img {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.box-slogan {
+    background: rgba(172, 0, 0, 0.55);
+    width: 50%;
+    text-align: center;
+    padding: 20px 40px;
+}
+
+.box-slogan p {
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 36px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 20px 0;
+}
+
+.box-container {
+    margin: 50px auto;
+}
+
+.box-container h2 {
+    text-align: center;
+    margin-top: 50px;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 22px;
+    color: #C60000;
+}
+
+.box-content {
+    display: flex;
+}
+
+.content-left {
+    width: 60%;
+}
+
+.content-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content-right {
+    width: 40%;
+    background: #AC0000;
+    padding: 58px;
+}
+
+.content-right h5 {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin: 20px 0;
+}
+
+.content-right p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+

@@ -1,8 +1,9 @@
 body {
     height: 100vh;
-    background: #ccc;
 }
 
+
+/* Header */
 .header__nav {
     background: #fff;
     height: 90px;
@@ -23,10 +24,19 @@ body {
     display: flex;
     align-items: center;
     height: 100%;
+    justify-content: space-between;
+}
+
+.nav-left-list {
+    padding-right: 35px;
+}
+
+.nav-right-list {
+    padding-left: 35px;
 }
 
 .nav-left-list-item {
-    width: 25%;
+    position: relative;
 }
 
 .item-has-icon {
@@ -56,15 +66,58 @@ body {
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;
+    padding: 10px 0;
 }
 
-.nav-right-list-item {
-    width: 16.6666%;
-    text-align: right;
+.nav-right-list-item:hover > a ,
+.nav-left-list-item:hover > a {
+    color: #C60000;
+    
+    
 }
 
 .header-logo {
     height: 80px;
+}
+
+.drop-menu {
+    position: absolute;
+    background: #fff;
+    border-top: 2px solid #000;
+    left: 0;
+    top: 100%;
+    display: none;
+    animation: dropMenu 0.2s linear;
+    z-index: 100;
+}
+
+.drop-menu ul{
+    list-style: none;
+}
+.drop-menu ul li {
+    padding: 10px 12px;
+}
+
+.drop-menu ul li:last-child {
+    border-top: 1px solid #000;
+}
+
+.nav-left-list-item:hover .drop-menu{
+    display: block;
+}
+.drop-menu ul li:hover a {
+    color: #C60000;
+}
+
+@keyframes dropMenu {
+    from{
+        top: 60px;
+        opacity: 0;
+    }
+    to{
+        top: 100%;
+        opacity: 0.7;
+    }
 }
 
 /* body content */
@@ -74,48 +127,186 @@ body {
     height: calc(100% - 125px);
 }
 
+.body__container-content-right,
 .body__container-content {
     width: 33.3333%;
+}
+.reverse {
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .content-top {
     height: 66.6666%;
     display: flex;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.content-bottom{
+    overflow: hidden;
 }
 
 .content-top-right,
 .content-top-left {
     width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
 }
 
-.content-top-left {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.content-top-right-row2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
 }
 
-.background-left {
-    background: url("../img/van-tai.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.row2-content-top,
+.row2-content-bottom {
+    height: 50%;
+    position: relative;
+    overflow: hidden;
 }
 
-.background-right {
-    background: url("../img/kinh-doanh-bds.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.row2-content-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.row2-content-bottom > i {
+    font-size: 50px;
+    color: #C60000;
+}
+
+.phone-number {
+    position: absolute;
+    bottom: 10%;
+    color: #484848;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.content-description {
+    text-align: center;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    left: -10px;
+    bottom: -10px;
+    background: transparent;
+    border: 1px solid #fff;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.row2-content-bottom img,
+.row2-content-top img,
+.content-top img,
+.content-bottom img,
+.content-top-right img,
+.content-top-left img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.row2-content-top h4,
+.content-bottom.right h4,
+.content-bottom.middle h4,
+.content-top.middle h4,
+.content-top-right h4,
+.content-top-left h4 {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.75);
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transition: 1s;
+}
+
+ .row2-content-top p,
+.content-bottom.right p,
+.content-top.middle p,
+.content-bottom.middle p,
+.content-top-right p,
+.content-top-left p {
+    position: absolute;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    bottom: -120px;
+    min-height: 120px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transition: 1s;
+    transform: scale(1.5);
+    opacity: 0;
+    /* width: calc(100% - 60px); */
+    width: 80%;
+
+}
+ 
+.row2-content-top:hover .content-description,
+.content-bottom.right:hover .content-description,
+.content-bottom.middle:hover .content-description,
+.content-top.middle:hover .content-description,
+.content-top-right:hover .content-description,
+.content-top-left:hover .content-description{
+    top: 10px;
+    right: 10px;
+    left: 10px;
+    bottom: 10px;
+}
+
+.row2-content-top:hover .content-description h4,
+.content-bottom.right:hover .content-description h4, 
+.content-bottom.middle:hover .content-description h4,
+.content-top.middle:hover .content-description h4,
+.content-top-right:hover .content-description h4,
+.content-top-left:hover .content-description h4 {
+    bottom: 50%;
+}
+
+.content-top-right:hover .content-description p,
+.row2-content-top:hover .content-description p,
+.content-bottom.right:hover .content-description p,
+.content-bottom.middle:hover .content-description p,
+.content-top.middle:hover .content-description p,
+.content-top-left:hover .content-description p {
+    bottom: calc(50% - 130px);
+    transform: scale(1);
+
+    opacity: 1;
+}
+
 
 .content-bottom {
-    background: url("../img/slogan.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; 
-}
-
-.content-bottom {
+    position: relative;
     height: 33.3333%;
     display: flex;
     flex-direction: column;
@@ -145,4 +336,36 @@ body {
 .footer {
     height: 35px;
     background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    position: relative;
+    font-size: 12px;
+}
+
+.footer button {
+    position: absolute;
+    height: 36px;
+    width: 282px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border: none;
+    background: #D9D9D9;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.footer button:hover {
+    background: #C60000;
+    color: #fff;
+}
+
+.footer img {
+    margin-bottom: -1px;
 }

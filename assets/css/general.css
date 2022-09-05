@@ -1,0 +1,288 @@
+/* Header */
+
+.header__nav {
+    background: #fff;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 35px;
+    position: fixed;
+    z-index: 1000;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.header__nav-right,
+.header__nav-left {
+    width: 100%;
+}
+
+.nav-right-list,
+.nav-left-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.nav-left-list {
+    padding-right: 35px;
+}
+
+.nav-right-list {
+    padding-left: 35px;
+}
+
+.nav-left-list-item {
+    position: relative;
+}
+
+.item-has-icon {
+    display: flex;
+    align-items: center;
+}
+
+.pos-right {
+    justify-content: end;
+}
+
+.icon-nav {
+    font-size: 18px;
+}
+
+.item-has-icon.pos-right i{
+    margin-left: 4px;
+    color: #c4c4c4;
+    font-size: 12px;
+}
+
+.nav-left-list-item a,
+.nav-right-list-item a {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 10px 0;
+}
+
+.nav-right-list-item:hover > a ,
+.nav-left-list-item:hover > a {
+    color: #C60000;
+    
+    
+}
+
+.header-logo {
+    height: 80px;
+}
+
+.drop-menu {
+    position: absolute;
+    background: #fff;
+    border-top: 2px solid #000;
+    left: 0;
+    top: 100%;
+    display: none;
+    animation: dropMenu 0.2s linear;
+    z-index: 100;
+}
+
+.drop-menu ul{
+    list-style: none;
+}
+.drop-menu ul li {
+    padding: 10px 12px;
+}
+
+.drop-menu ul li:last-child {
+    border-top: 1px solid #000;
+}
+
+.nav-left-list-item:hover .drop-menu{
+    display: block;
+}
+.drop-menu ul li:hover a {
+    color: #C60000;
+}
+
+@keyframes dropMenu {
+    from{
+        top: 60px;
+        opacity: 0;
+    }
+    to{
+        top: 100%;
+        opacity: 0.7;
+    }
+}
+
+/* footer */
+
+.footer {
+    background: url('../img/sun-tower.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.footer__top {
+    display: flex;
+    padding-top: 35px;
+}
+
+.footer__top-left {
+    width: 45%;
+    padding-right: 150px;
+}
+
+.name-company {
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: #C60000;
+    margin-top: 14px;
+}
+
+.footer__top-left span {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #2C2C2C;
+    margin-top: 15px;
+}
+
+.footer__top-left span img {
+    margin-right: 8px;
+}
+
+span.location {
+    align-items: flex-start;
+}
+
+.footer__top-mid {
+    width: 25%;
+}
+.footer__top-right {
+    width: 30%;
+}
+
+.footer__top-mid h5 {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #DC0000;
+    margin-top: 20px;
+}
+
+h5.title-out-service {
+    margin-top: 60px;
+
+}
+
+.footer__top-mid ul {
+    list-style: none;
+    margin-top: 5px;
+}
+
+.footer__top-mid ul li {
+    padding: 2px 0;
+}
+
+.footer__top-mid a {
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 18px;
+    color: #2C2C2C;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+}
+
+.social-icon a {
+    margin-right: 15px;
+    margin-top: 15px;
+}
+
+.footer__top-right h5 {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #DC0000;
+    margin-top: 60px;
+}
+
+.footer__top-right p {
+    font-size: 13px;
+    line-height: 16px;
+    color: #2C2C2C;
+    margin-top: 7px;
+}
+
+.input-custom {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.input-custom input{
+    width: 100%;
+    border-right: none;
+    border-top: 1px solid #716F6F;
+    border-left: 1px solid #716F6F;
+    border-bottom: 1px solid #716F6F;
+    padding: 0 22px;
+    background: transparent;
+    
+}
+
+.input-custom input::-webkit-input-placeholder { /* Edge */
+    font-style: italic;
+    font-weight: 300;
+    font-size: 13px;
+    color: #6F7175;
+  }
+.input-custom input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-style: italic;
+    font-weight: 300;
+    font-size: 13px;
+    color: #6F7175;
+  }
+.input-custom input::placeholder {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 13px;
+    color: #6F7175;
+  }
+
+.input-custom button {
+    width: 84px;
+    height: 33px;
+    background: #C60000;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__bottom {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+    padding-bottom: 20px;
+
+    font-size: 14px;
+    line-height: 17px;
+    color: #2C2C2C;
+}

@@ -1,0 +1,66 @@
+.heading {
+    margin-top: 90px;
+    height: 450px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(74.85deg, rgba(198, 0, 0, 0.2) 0%, rgba(198, 0, 0, 0) 49.69%), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+}
+
+.heading-title{
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 65px;
+    line-height: 80px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    /* width: 100%; */
+}
+
+.heading img {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.title-project {
+    text-align: center;
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 29px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #2C2C2C;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+.filter-project {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 140px;
+    margin-bottom: 50px;
+}
+
+.filter-project-item {
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: uppercase;
+    border: 1px solid #000;
+    border-radius: 15px;
+    padding: 5px 15px;
+}
+
+.filter-project-item.active {
+    background: #000;
+    color: #fff;
+    font-weight: 600;
+}
