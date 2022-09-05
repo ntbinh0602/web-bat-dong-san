@@ -6,7 +6,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 35px;
     position: fixed;
     z-index: 1000;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
@@ -26,15 +25,7 @@
     display: flex;
     align-items: center;
     height: 100%;
-    justify-content: space-between;
-}
-
-.nav-left-list {
-    padding-right: 35px;
-}
-
-.nav-right-list {
-    padding-left: 35px;
+    justify-content: space-around;
 }
 
 .nav-left-list-item {
@@ -243,6 +234,7 @@ h5.title-out-service {
     border-bottom: 1px solid #716F6F;
     padding: 0 22px;
     background: transparent;
+    outline: none;
     
 }
 
