@@ -1,0 +1,128 @@
+.banner__slider-container {
+    margin-top: 90px;
+    width: 100%;
+    max-height: 670px;
+    overflow: hidden;
+    position: relative;
+}
+.banner__slider-container::before {
+    content: "";
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 73.51%, rgba(0, 0, 0, 0.4) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.slider.slider-nav-top img {
+    width: 100%;
+    max-height: 670px;
+    object-fit: cover;
+    
+}
+
+.slick-prev {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: calc(50% - 30px);
+}
+
+.slick-prev:before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 60px;
+    right: -10px;
+    top: 0;
+    background: rgba(228, 2, 2, 0.5);
+}
+ .slick-prev:after {
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 18px;
+    left: 10px;
+    background: transparent;
+    transform: rotate(135deg);
+}
+
+
+.slick-next {
+    position: absolute;
+    z-index: 1;
+    right: 10px;
+    top: calc(50% - 30px);
+}
+
+.slick-next:before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 60px;
+    right: -10px;
+    top: 0;
+    background: rgba(228, 2, 2, 0.5);
+}
+ .slick-next:after {
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 18px;
+    right: 0;
+    background: transparent;
+    transform: rotate(-45deg);
+}
+
+.flag-top {
+    position: absolute;
+    top: 0;
+    background: red;
+    padding: 10px 5px;
+    left: 30px;
+}
+
+.flag-top span {
+    text-transform:capitalize;
+    color: #fff;
+    font-size: 14px;
+    font-family: "Fraunces";
+    font-weight: 800;
+    border: 3px solid #fff;
+    padding: 2px 5px;
+}
+
+.text-in-banner {
+    position: absolute;
+    width: 1240px;
+    margin: 0 auto;
+    bottom: 34px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.text-in-banner h4 {
+    font-family: 'Fraunces';
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 43px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.text-in-banner span {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    color: #FFFFFF;
+}

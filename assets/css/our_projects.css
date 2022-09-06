@@ -64,3 +64,270 @@
     color: #fff;
     font-weight: 600;
 }
+
+.card__container {
+    display: flex;
+    height: 500px;
+    margin-bottom: 45px;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.reverse .card__right {
+    margin-left: 0;
+}
+
+.reverse .card__right {
+    margin-right: 20px;
+}
+
+.card__left {
+    width: 35%;
+    border: 1px solid #ccc;
+    padding: 25px;
+}
+
+.card__left-top {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.status{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+}
+
+.status-red {
+    color: #C60000;
+
+}
+
+.status-green {
+    color: #063E17;
+}
+
+
+
+.name-title {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 157.53%;
+    color: #484848;
+    text-transform: uppercase;
+}
+
+.name-title-update {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 157.53%;
+    color: #484848;
+}
+
+.card__left-middle {
+    font-weight: 400;
+    font-size: 14px;
+    color: #484848;
+    line-height: 21px;
+    border-bottom: 1px solid #ccc;
+    margin-top: 15px;
+
+}
+
+.card__left-middle span {
+    margin-bottom: 15px;
+    display: block;
+}
+
+.card__left-middle b{
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 19px;
+}
+
+.card__left-bottom {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #484848;
+    margin-top: 14px;
+}
+
+.card__left-bottom p {
+    display: -webkit-box;
+   -webkit-line-clamp: 6;
+   -webkit-box-orient: vertical;
+   overflow: hidden;
+}
+
+.card__left-bottom a {
+    font-weight: 700;
+    font-size: 13px;
+    display: block;
+    line-height: 150%;
+    color: #C60000;
+    margin-top: 10px;
+    text-align: right;
+    position: relative;
+    text-decoration: none;
+}
+
+.card__left-bottom a::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    background: #C60000;
+    width: 10px;
+    top: 8px;
+    right: 82px;
+    border-radius: 3px;
+}
+
+.card__right {
+    width: 65%;
+    margin-left: 20px;
+}
+
+.slider__container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+}
+
+.slider.slider-nav img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.title-in-slide {
+    position: absolute;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(35px);
+    line-height: 60px;
+    left: 0;
+    right: 0;
+    font-weight: 700;
+    font-size: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 0px 2px 7px rgba(0, 0, 0, 0.25);
+}
+
+.slick-prev {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: calc(50% - 30px);
+}
+
+.slick-prev:before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 60px;
+    right: -10px;
+    top: 0;
+    background: rgba(255, 255, 255, 0.5);
+}
+ .slick-prev:after {
+    border-right: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 18px;
+    left: 10px;
+    background: transparent;
+    transform: rotate(135deg);
+}
+
+
+.slick-next {
+    position: absolute;
+    z-index: 1;
+    right: 10px;
+    top: calc(50% - 30px);
+}
+
+.slick-next:before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 60px;
+    right: -10px;
+    top: 0;
+    background: rgba(255, 255, 255, 0.7);
+}
+ .slick-next:after {
+    border-right: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 18px;
+    right: 0;
+    background: transparent;
+    transform: rotate(-45deg);
+}
+
+.card__right-img {
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+.img_coming_soon {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text_in_img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.img_coming_soon_text {
+    margin-top: 30px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 45px;
+}
+
+.pagination span {
+    padding: 10px 15px;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #000000;
+    cursor: pointer;
+}
+
+.pagination span.active {
+    border: 1px solid #000;
+}
+
+
+
